@@ -1,0 +1,47 @@
+#flag{
+    background-image:url(flag.jpg);
+    background-repeat:repeat-x;
+}
+
+input[type=text] {
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+.blink_me {
+  animation: blinker 2s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+@media(min-width: 462px)
+{
+/* When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+  width: 80%;
+}
+}
+
+@media(max-width: 461px)
+{
+	input[type=text]:focus {
+ 	width: 60% 
+}
+}
+
+@media(max-width: 391px)
+{
+input[type=text]:focus {
+ 	width: 80% 
+}	
+}
+
+@media(max-width: 293px)
+{
+	 
+}
+}

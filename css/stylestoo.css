@@ -1,0 +1,74 @@
+@media(min-width: 599px)
+{
+	#appear{
+		display: none;
+	}
+}
+@media(max-width: 696px)
+{
+	#dissaper{
+		display: none;
+	}
+	#appear{
+		display: block;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	.babars
+	{
+		size: 10px
+	}
+}
+@media(max-width: 270px)
+{
+	#llogo{
+		font-size: 20px
+	}
+	#appear{
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	.w3-bar-item
+	{
+		width: 10%
+	}
+
+	.babars
+	{
+		size: 10px
+	}
+}
+
+@media(max-width: 240px)
+{
+	#llogo{
+		font-size: 18px
+	}
+	#appear{
+		margin-top: 8px;
+		margin-bottom: 8px;
+	}
+}
+
+@media(max-width: 226px)
+{
+	#llogo{
+		font-size: 15px
+	}
+	#appear{
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+}
+
+@media(max-width: 217px)
+{
+	#llogo{
+		font-size: 20px
+	}
+	#appear{
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+}
