@@ -1,6 +1,8 @@
-  const mpesa = () => {
+  const pay = () => {
 
-  	let url = "https://cors-anywhere.herokuapp.com/https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials";
+  	const mpesa = () => {
+
+  		let url = "https://cors-anywhere.herokuapp.com/https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials";
 
   //const string = 'Ll0oT9j55HCcLSgoIG5vmj9F8EoLEHiM'+ ':' +'LZtrAyR0OZi08JyQ';
 
@@ -43,29 +45,30 @@
 mpesa();
 
 const stk = (da) => {
-let url2 = "https://cors-anywhere.herokuapp.com/https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/processrequest";
+	let url2 = "https://cors-anywhere.herokuapp.com/https://sandbox.safaricom.co.ke/mpesa/stkpush/v1/processrequest";
 
-let auth2 = "Bearer " +da;
+	let auth2 = "Bearer " +da;
 
 // start date
 var d = new Date();
 // full year
 var years = d.getFullYear();
 // month
-var months = d.getMonth()+1;
+var months = document.querySelector('#month').value;
 // date
 var days = d.getDate();
 // hours
-var hour = d.getHours();
+var hours = document.querySelector('#hour').value;
 // minutes
 var minutes = d.getMinutes();
 // seconds
 var seconds = d.getSeconds();
 
-let pnumber = "254712763780";
+let pnumber = document.querySelector('#phone').value;
 
-var timestamp = d.getFullYear()+''+0+''+months+''+d.getDate()+''+d.getHours()+''+0+''+d.getMinutes()+''+d.getSeconds();
+// var timestamp = d.getFullYear()+''+0+''+months+''+d.getDate()+''+d.getHours()+''+0+''+d.getMinutes()+''+d.getSeconds();
 
+var timestamp = d.getFullYear()+''+months+''+d.getDate()+''+hours+''+d.getMinutes()+''+d.getSeconds();
 
 console.log(timestamp);
 
@@ -84,7 +87,7 @@ let raw = {
 	"PartyA": pnumber,
 	"PartyB": "174379",
 	"PhoneNumber": pnumber,
-	"CallBackURL": "http://6ef70f7d89aa.ngrok.io/hotelizetufrontend/callback.php",
+	"CallBackURL": "http://188f03c6a9b6.ngrok.io/hotelizetufrontend/callback.php",
 	"AccountReference": "123121",
 	"TransactionDesc": "123121"
 }
@@ -103,8 +106,10 @@ fetch(url2, options2)
 
 .then(resp => resp.json())
 .then(data => {
+
 	console.log(data);
 
 
 });
+}
 }

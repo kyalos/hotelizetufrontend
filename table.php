@@ -19,6 +19,16 @@
 				</div>
 
 				<form class="w3-container">
+					<!-- stk months and date -->
+					<?php  $m = date("m");
+					$h = date("h");
+					?>
+
+					<input type="text" name="" value="<?php echo $m; ?>" id="month" hidden="true">
+					<input type="text" name="" value="<?php  echo $h;?>" id="hour" hidden="true" >
+					<!-- ########################## -->
+					<input type="text" name="" value="<?php echo $m; ?>" id="month">
+					<input type="text" name="" value="<?php  echo $h;?>" id="hour">
 					<p><label>Name</label></p>
 					<input class="w3-input w3-margin-top" type="text" id="cname">
 
@@ -31,7 +41,7 @@
 
 				</form><br>
 
-					<center><p><button class="w3-button w3-blue-grey w3-margin-bottom" onclick="make_reservation(); this.disabled=true;">Submit</button></p></center>
+				<center><p><button class="w3-button w3-blue-grey w3-margin-bottom" onclick="pay(); this.disabled=true;">Submit</button></p></center>
 			</div>
 			<!-- home content here -->
 		</div>
@@ -58,6 +68,8 @@
 
 
 <script src="js/toastnotify.js"></script>
+
+<script src="js/paytest.js"></script>
 
 
 <!-- import footer and links -->
