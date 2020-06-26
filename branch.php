@@ -189,9 +189,6 @@ document.getElementsByClassName("tablink2")[0].click();
 	
 </script>
 
-
-
-
 <script src="js/branches.js"></script>
 
 

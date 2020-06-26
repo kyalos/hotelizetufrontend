@@ -4,8 +4,7 @@ const add_branches = () => {
 
 
 	let raw = {
-		"offer":CKEDITOR.instances.offers.getData(),
-		"price":document.querySelector('#price').value,
+		"name":CKEDITOR.instances.branch.getData(),
 		"hotel_id": 1
 	};
 

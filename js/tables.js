@@ -38,13 +38,16 @@ const tableforone = (id) => {
 
 			div.innerHTML+=`
 			<div class="w3-row">
-			<div class="w3-half">
-			<p style="color: black" class="w3-margin-left">`+element.table_details+`</p>
+			<div class="w3-third">
+			<center><p style="color: black" class="w3-margin-left w3-margin-top">`+element.table_details+`</p></center>
 
 
 			</div>
-			<div class="w3-half">
-			<center><button class="w3-button w3-hover-red w3-black" onclick="window.location.href= 'table.php?table_id=`+element.table_id+`&branch_id=`+element.branch_id+`&hotel_id=`+element.hotel_id+`'; ">Make reservation</button></center>
+			<div class="w3-third w3-margin-bottom">
+			<center><img src="images/one.png" class=" w3-margin-top"></center>
+			</div>
+			<div class="w3-third">
+			<center><p><button class="w3-button w3-black w3-hover-red w3-margin-top" onclick="window.location.href= 'table.php?table_id=`+element.table_id+`&branch_id=`+element.branch_id+`&hotel_id=`+element.hotel_id+`'; ">Reserve</button></p></center>
 			</div>
 
 			</div>
@@ -92,17 +95,19 @@ const tablefortwo = (id) => {
 
 			div.innerHTML+=`
 			<div class="w3-row">
-			<div class="w3-half">
-			<p style="color: black" class="w3-margin-left">`+element.table_details+`</p>
+			<div class="w3-third">
+			<center><p style="color: black" class=" w3-margin-top w3-margin-left">`+element.table_details+`</p></center>
 
 
 			</div>
-			<div class="w3-half">
-			<center><button class="w3-button w3-hover-red w3-black" onclick="window.location.href= 'table.php?table_id=`+element.table_id+`&branch_id=`+element.branch_id+`&hotel_id=`+element.hotel_id+`'; ">Make reservation</button></center>
+			<div class="w3-third w3-margin-bottom">
+			<center><img src="images/two.png" class=" w3-margin-top"></center>
+			</div>
+			<div class="w3-third">
+			<center><p><button class="w3-button w3-black w3-hover-red w3-margin-top" onclick="window.location.href= 'table.php?table_id=`+element.table_id+`&branch_id=`+element.branch_id+`&hotel_id=`+element.hotel_id+`'; ">Reserve</button></p></center>
 			</div>
 
 			</div>
-
 			<hr>
 			
 			`
@@ -145,13 +150,16 @@ const tableforthree = (id) => {
 
 			div.innerHTML+=`
 			<div class="w3-row">
-			<div class="w3-half">
-			<p style="color: black" class="w3-margin-left">`+element.table_details+`</p>
+			<div class="w3-third">
+			<center><p style="color: black" class="w3-margin-left w3-margin-top">`+element.table_details+`</p></center>
 
 
 			</div>
-			<div class="w3-half">
-			<center><button class="w3-button w3-hover-red w3-black" onclick="window.location.href= 'table.php?table_id=`+element.table_id+`&branch_id=`+element.branch_id+`&hotel_id=`+element.hotel_id+`'; ">Make reservation</button></center>
+			<div class="w3-third w3-margin-bottom">
+			<center><img src="images/three.png" class=" w3-margin-top"></center>
+			</div>
+			<div class="w3-third">
+			<center><p><button class="w3-button w3-black w3-hover-red w3-margin-top" onclick="window.location.href= 'table.php?table_id=`+element.table_id+`&branch_id=`+element.branch_id+`&hotel_id=`+element.hotel_id+`'; ">Reserve</button></p></center>
 			</div>
 
 			</div>

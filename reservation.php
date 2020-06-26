@@ -19,43 +19,45 @@ require('templates/header.php');
 			<div class="w3-margin-bottom">
 				<center>
 					<div class="w3-display-container">
-						<div class="w3-bar" style="background-color: #0d720b">
-							<p style="color: white">Tables for one</p>
+						<div class="w3-bar w3-border-bottom">
+							<h5 style="color: black"><u><b>TABLES FOR ONE</b></u></h5>
 
 						</div>
 
 					</div>
 				</center><br>
 				<!-- loop here -->
-				<div id="tablesforone">
+				<div id="tablesforone" style="background-color: #c7d6dd">
 
 				</div>
 				<br>
 
 				<center>
 					<div class="w3-display-container">
-						<div class="w3-bar" style="background-color: #ff0000">
-							<p style="color: white">Tables for two</p>
+						<div class="w3-bar w3-border-bottom">
+							<h5 style="color: black"><u><b>TABLES FOR TWO</b></u></h5>
+
 						</div>
 					</div>
 				</center><br>
 				<!-- loop here -->
 				<!-- loop here -->
-				<div id="tablesfortwo">
+				<div id="tablesfortwo" style="background-color: #ccc9c9">
 
 				</div>
 				<br>
 
 				<center>
 					<div class="w3-display-container">
-						<div class="w3-bar" style="background-color: #0d720b">
-							<p style="color: white">Tables for three</p>
+						<div class="w3-bar w3-border-bottom">
+							<h5 style="color: black"><u><b>TABLES FOR THREE</b></u></h5>
+
 						</div>
 					</div>
 				</center><br>
 				<!-- loop here -->
 				<!-- loop here -->
-				<div id="tablesforthree">
+				<div id="tablesforthree" style="background-color: #f4c6ab">
 
 				</div>
 				<br>

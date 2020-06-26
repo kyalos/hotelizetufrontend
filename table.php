@@ -31,7 +31,7 @@
 
 				</form><br>
 
-					<center><p><button class="w3-button w3-blue-grey w3-margin-bottom" onclick="make_reservation()">Submit</button></p></center>
+					<center><p><button class="w3-button w3-blue-grey w3-margin-bottom" onclick="make_reservation(); this.disabled=true;">Submit</button></p></center>
 			</div>
 			<!-- home content here -->
 		</div>

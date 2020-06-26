@@ -18,7 +18,7 @@
     <a href="#" class="w3-bar-item w3-button w3-text-red w3-hover-red" id="llogo"><b><i class="fa fa-map-marker w3-margin-right"></i>Hoteli zetu</b></a>
     <div id="dissaper">
       <a href="eateries.php" class="w3-bar-item w3-button w3-mobile w3-hover-red w3-right">Eateries</a>
-      <a href="#" class="w3-bar-item w3-button w3-mobile w3-hover-red w3-right">Nights out</a>
+      <a href="nightsout.php" class="w3-bar-item w3-button w3-mobile w3-hover-red w3-right">Nights out</a>
 
     </div>
     <div id="appear">
@@ -32,7 +32,7 @@
     <button onclick="closeRightMenu()" class="w3-bar-item w3-button w3-large w3-red w3-hover-black">Close &times;</button>
     
     <a href="eateries.php" class="w3-bar-item w3-button">Eateries</a>
-    <a href="#" class="w3-bar-item w3-button">Nights out</a>
+    <a href="nightsout.php" class="w3-bar-item w3-button">Nights out</a>
     
     <div class="w3-row">
       <div class="w3-container w3-center w3-opacity w3-margin-bottom">
