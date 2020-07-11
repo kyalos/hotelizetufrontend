@@ -1,6 +1,8 @@
-function random(number) {
-  const result = Math.floor(Math.random() * number)
-  return result;
-  console.log(result);
+function random() {
+  let price = document.querySelector('#price').value;
+
+  let price2 = document.querySelector('#price2').value;
+  console.log(price);
+  console.log(price2);
 }
-random(5)
+random()

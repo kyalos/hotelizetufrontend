@@ -19,18 +19,18 @@ require('../templates/hotelsheader.php');
 
 				<form class="w3-container">
 					<br>
-					<p><label>Username</label></p>
-					<input class="w3-input w3-margin-top" type="text" id="cname">
+					<p><label>Phone number</label></p>
+					<input class="w3-input w3-margin-top" type="number" id="phone">
 
 					<p>  <label>Password</label></p>   
-					<input class="w3-input" type="password" id="pass">
+					<input class="w3-input" type="password" id="password">
 
 
 					<center><input type="checkbox" onclick="myFunction()">  Show Password</center>
 
 				</form><br>
 
-				<center><p><button class="w3-button w3-blue-grey w3-margin-bottom" onclick="login()">Submit</button></p></center>
+				<center><p><button class="w3-button w3-blue-grey w3-margin-bottom" onclick="check_empty_login()">Submit</button></p></center>
 			</div>
 		</div>
 	</div>
@@ -40,7 +40,7 @@ require('../templates/hotelsheader.php');
 </div>
 <script>
 	function myFunction() {
-		var x = document.getElementById("pass");
+		var x = document.getElementById("password");
 		if (x.type === "password") {
 			x.type = "text";
 		} else {
@@ -48,6 +48,11 @@ require('../templates/hotelsheader.php');
 		}
 	}
 </script>
+
+
+<script src="../js/stafflogin.js"></script>
+
+<script src="../js/toastnotify.js"></script>
 
 <?php
 require('../templates/footer.php');

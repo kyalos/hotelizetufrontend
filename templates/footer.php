@@ -13,5 +13,5 @@
       <i class="fa fa-linkedin w3-hover-opacity"></i>
     </div>
   </div>
-  <p>Made with love by HoteliZetu <a href="" target="_blank" class="w3-hover-text-green">HoteliZetu</a></p>
+  <p>Made with love by <span class=" w3-text-red w3-hover-text-green">HoteliZetu</span></p>
 </footer>

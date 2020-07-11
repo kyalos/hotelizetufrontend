@@ -12,6 +12,46 @@ function getUrlVars() {
 var number = getUrlVars()["id"];
 
 
+const check_empty_offers = () => {
+
+	let offers = CKEDITOR.instances.offers.getData();
+
+	console.log(offers);
+
+	let price = document.querySelector('#price');
+
+	if(offers != ""|| offers == "null" || offers == "NULL" || typeof offers == "undefined" )
+	{
+		if(price.value != ""|| price.value == "null" || price.value == "NULL" || typeof price.value == "undefined")
+		{
+			add_offers();
+		}
+		else
+		{
+			Toastnotify.create({
+				text:"Enter your price",
+				type:'dark',
+				important:true,
+				callbackOk:()=>{
+					console.log('Precionado OK');
+				}
+			});
+		}
+	}
+	else
+	{
+		Toastnotify.create({
+				text:"Enter your offers",
+				type:'dark',
+				important:true,
+				callbackOk:()=>{
+					console.log('Precionado OK');
+				}
+			});
+	}
+
+}
+
 const add_offers = () => {
 
 
@@ -33,14 +73,13 @@ const add_offers = () => {
 			"Content-Type": "application/json"
 		},
 		redirect: 'follow'
-	}
-	;
+	};
 
 	fetch("https://hotelizetu.herokuapp.com/api/offer", requestOptions)
 	.then(response => response.json())
 	.catch(error => console.log('error', error))
 	.then(result => {
-
+		console.log(result);
 		if(result.status == 200)
 		{
 			Toastnotify.create({
@@ -49,9 +88,17 @@ const add_offers = () => {
 				important:true,
 				callbackOk:()=>{
 					console.log('Precionado OK');
-				},
-				callbackCancel:()=>{
-					console.log('Precionado Cancelado');
+				}
+			});
+		}
+		else
+		{
+			Toastnotify.create({
+				text:result.success,
+				type:'dark',
+				important:true,
+				callbackOk:()=>{
+					console.log('Precionado OK');
 				}
 			});
 		}
@@ -80,8 +127,8 @@ const offers = (id) => {
 
 			ouroffers.innerHTML+=`
 			<tr>
-			<td><input type="text" value="`+element.offer +`"</td>
-			<td><input type="text" value="`+element.price+`"</td>
+			<td>`+element.offer +`</td>
+			<td>`+element.price+`</td>
 			<td><button class="w3-button w3-red">Delete</button></td>
 			</tr>
 			`
@@ -93,4 +140,6 @@ const offers = (id) => {
 };
 
 offers(number);
+
+
 

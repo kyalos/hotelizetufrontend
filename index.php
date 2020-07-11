@@ -1,16 +1,25 @@
 <?php
 require('templates/homeheader.php');
 ?>
+<script>
+  $(window).load(function() {
+    // Animate loader off screen
+    $(".se-pre-con").fadeOut("slow");;
+  });
+</script>
+
 <!-- Page Content -->
 <div class="w3-padding-large" id="main">
   <!-- Header/Home -->
   <header class="w3-container w3-padding-32 w3-center " id="home">
     <div class="w3-col l12 m12 s12">
-      <img src="images/undraw_eating_together_tjhx.svg" alt="boy" class="w3-image" width="992" height="1108">
+      <img src="images/undraw_eating_together_tjhx.svg" alt="boy" class="w3-image elem" width="992" height="1108">
     </div>
   </header>
 
   <div class="w3-row-padding w3-margin-bottom" id="about">
+    <div class="se-pre-con"></div>
+    
     <div class="w3-col l7 12">
       <h3>Who we are</h3>
       <h6>HoteliZetu is a product birthed during a global pandemic ravaging the world and literally changing
@@ -38,6 +47,12 @@ require('templates/homeheader.php');
     }
   </script>
 
+
+<script src="js/loader.js"></script>
+
+
+<!-- track activities -->
+<script src="js/syslogs.js"></script>
   <?php
   require('templates/footer.php');
   ?>

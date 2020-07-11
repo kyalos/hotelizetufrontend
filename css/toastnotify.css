@@ -21,7 +21,7 @@
   #toastnotify-container {
     position: fixed;
     z-index: var(--z-toastnotify);
-    bottom: 400px;
+    top: 40px;
     left: 12px;
     width: auto;
     height: auto;

@@ -2,6 +2,13 @@
 require('templates/header.php');
 ?>
 
+<script>
+  $(window).load(function() {
+    // Animate loader off screen
+    $(".se-pre-con").fadeOut("slow");;
+  });
+</script>
+
 <!-- Page content -->
 <div class="w3-content" style="max-width:1100px;">
 
@@ -10,7 +17,8 @@ require('templates/header.php');
 
 	</div>
 	<div class="w3-row-padding w3-text-white w3-large">
-
+		<div class="se-pre-con"></div>
+		
 		<img src="images/java.jpg" class="w3-round brand w3-margin-left w3-margin-bottom">
 
 
@@ -191,6 +199,8 @@ document.getElementsByClassName("tablink2")[0].click();
 
 <script src="js/branches.js"></script>
 
+
+<script src="js/loader.js"></script>
 
 <?php
 require('templates/footer.php');

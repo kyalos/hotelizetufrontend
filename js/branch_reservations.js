@@ -36,7 +36,8 @@ const branches = (id) =>{
 			div.innerHTML+=`
 			
 			<tr class="w3-hover-red w3-border">
-			<td>`+element.name+`</td>
+			<td>`+element.phone+`</td>
+			<td>`+element.table_id+`</td>
 			<td><button class="w3-button w3-block w3-black btn" onclick="document.getElementById('rsvp`+element.reservation_id+`').style.display='block'">View</button></td>
 			</tr>`
 		});
@@ -61,17 +62,41 @@ const branches = (id) =>{
 			<div class="w3-half">
 			<p><u><b>Time</b></u></p>
 			<p>`+element.date_of_reservation+`</p>
+			
 			</div>
+			<div id="memb">
+			</div>
+			<p class="w3-wide"><b><u>Table members</u></b></p>
+
+			<ol class="w3-ol" style="width:100%">
+			<li>`+element.name+` `+element.phone+`</li>
+			</ol>
+
+
+			<p class="w3-wide"><b><u>Add members</u></b></p>
+			
+			<div class="w3-row-padding">
+			<div class="w3-half">
+			<label>Name</label>
+			<input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="Name">
+			</div>
+			<div class="w3-half">
+			<label>Phone number</label>
+			<input class="w3-input w3-border w3-margin-bottom" type="text" placeholder="phonenumber">
+			</div>
+
+			</div>
+
 			</div>
 
 			<center>
-			<button class="w3-button w3-block w3-black" style="width:30%">Submit</button>
+			<p><button class="w3-button w3-round w3-green">Submit</button></p>
 			</center>
-
+ 
 
 			<div class="w3-container">
 			<p class=" w3-right" 
-			onclick="document.getElementById('rsvp`+element.reservation_id+`').style.display='none'" style="cursor: pointer; color: black">Close</p>
+			onclick="location.reload(); document.getElementById('rsvp`+element.reservation_id+`').style.display='none'" style="cursor: pointer; color: black">Close</p>
 			</div>
 			</div>
 			</div>

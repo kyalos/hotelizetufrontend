@@ -38,16 +38,18 @@ require('../templates/adminheader.php');
 
 						</tr>
 					</thead>
+					<div id="content">
 					<tbody id="reservations">
+						<p>HEHEHEH</p>
 
 					</tbody>
+				</div>
 				</table>
+				<p id="info" style="display: none;"></p>
 			</div>
 			<div class="w3-third">
-				<div class="container">
-					<p>From:  <span>Jane</span></p>
-					<p>Hello. How are you today?</p>
-					<span class="time-right">11:00</span>
+				<div class="container w3-margin-top">
+					<embed src="../files/ML_inR.pdf" type="application/pdf" width="100%" height="800px" />
 				</div>
 			</div>
 

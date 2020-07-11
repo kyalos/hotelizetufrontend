@@ -5,11 +5,34 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="../css/w3css.css">
 <link rel="stylesheet" href="../css/stylestoo.css">
+<link rel="stylesheet" href="../css/messages.css">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/toastnotify.css">
+<link rel="stylesheet" href="../css/scroll.css">
+
+
+<link rel="stylesheet" href="../css/toastnotify.css">
+
+
+
+<link rel="stylesheet" href="../css/loader.css">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="../css/js-snackbar.css?v=2.0.0">
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169274245-1"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-169274245-1');
+</script>
+
 <script src="../css/ckeditor/ckeditor.js"></script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 	body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
@@ -21,7 +44,6 @@
 	<div class="w3-bar w3-white w3-border-bottom w3-xlarge ">
 		<a href="#" class="w3-bar-item w3-button w3-text-red w3-hover-red" id="llogo"><b><i class="fa fa-map-marker w3-margin-right"></i>Hoteli zetu</b></a>
 		<div id="dissaper">
-			<a href="edit.php" class="w3-bar-item w3-button w3-mobile w3-hover-red">Edit</a>
 			<a href="reservations.php" class="w3-bar-item w3-button w3-mobile w3-hover-red">Reservations</a>
 			<a href="#" class="w3-bar-item w3-button w3-mobile w3-hover-red">About us</a>
 

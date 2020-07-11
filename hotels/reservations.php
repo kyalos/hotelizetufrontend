@@ -2,6 +2,7 @@
 require('../templates/hotelsheader.php');
 ?>
 
+
 <!-- Page content -->
 <div class="w3-content" style="max-width:1100px;">
 
@@ -24,12 +25,16 @@ require('../templates/hotelsheader.php');
 
 			<table class="w3-table w3-striped w3-border w3-hoverable" id="myTable">
 				<tr class="w3-hover-black w3-border w3-red">
-					<th>Name</th>
-					<th>actions</th>
+					<th>Phone number</th>
+					<th>Table</th>
+					<th>Actions</th>
 				</tr>
 				<tbody id="reservations">
 
 				</tbody>
+			
+
+				
 			</table>
 
 
@@ -46,21 +51,21 @@ require('../templates/hotelsheader.php');
 	</div>
 
 
-<script>
+	<script>
 
-	function openRightMenu() {
-		document.getElementById("rightMenu").style.display = "block";
-	}
+		function openRightMenu() {
+			document.getElementById("rightMenu").style.display = "block";
+		}
 
-	function closeRightMenu() {
-		document.getElementById("rightMenu").style.display = "none";
-	}
-</script>
+		function closeRightMenu() {
+			document.getElementById("rightMenu").style.display = "none";
+		}
+	</script>
 
-<!-- search bar logic -->
-<script>
-	function Search() {
-		var input, filter, table, tr, td, i, txtValue;
+	<!-- search bar logic -->
+	<script>
+		function Search() {
+			var input, filter, table, tr, td, i, txtValue;
   // fetch variables
   input = document.getElementById("myInput");
 
@@ -91,6 +96,8 @@ require('../templates/hotelsheader.php');
 <script src="../js/branch_reservations.js"></script>
 
 
+<!-- track activities -->
+<script src="../js/syslogs.js"></script>
 
 <?php
 require('../templates/footer.php');

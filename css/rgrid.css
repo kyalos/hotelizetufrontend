@@ -1,0 +1,41 @@
+@media(max-width: 434px)
+{
+	.rgrid
+	{
+		width: 50%;
+	}
+	.logos
+	{
+		width: 150px;
+		height: 150px;
+	}
+}
+
+@media(max-width: 356px)
+{
+	.rgrid
+	{
+		width: 80%;
+		margin-left: 30px;
+	}
+	.logos
+	{
+		width: 150px;
+		height: 150px;
+	}
+}
+
+@media(min-width: 435px)
+{
+	.rgrid
+	{
+		width: 50%;
+	}
+}
+@media(min-width: 680px)
+{
+	.rgrid
+	{
+		width: 25%;
+	}
+}
