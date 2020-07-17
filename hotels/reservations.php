@@ -32,7 +32,7 @@ require('../templates/hotelsheader.php');
 				<tbody id="reservations">
 
 				</tbody>
-			
+
 
 				
 			</table>
@@ -42,6 +42,40 @@ require('../templates/hotelsheader.php');
 
 			<div id="modals">
 				
+			</div>
+
+			<!-- Menu Modal -->
+			<div id="menu" class="w3-modal">
+				<div class="w3-modal-content w3-animate-zoom">
+					<div class="w3-container w3-black w3-display-container">
+						<span onclick="document.getElementById('menu').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+						<h1>Starters</h1>
+					</div>
+					<div class="w3-container">
+						<h5 style="color: black">Tomato Soup <b>$2.50</b></h5>
+						<h5 style="color: black">Chicken Salad <b>$3.50</b></h5>
+						<h5 style="color: black">Bread and Butter <b>$1.00</b></h5>
+					</div>
+					<div class="w3-container w3-black">
+						<h1>Main Courses</h1>
+					</div>
+					<div class="w3-container">
+						<h5 style="color: black">Grilled Fish and Potatoes <b>$8.50</b></h5>
+						<h5 style="color: black">Italian Pizza <b>$5.50</b></h5>
+						<h5 style="color: black">Veggie Pasta <b>$4.00</b></h5>
+						<h5 style="color: black">Chicken and Potatoes <b>$6.50</b></h5>
+						<h5 style="color: black">Deluxe Burger <b>$5.00</b></h5>
+					</div>
+					<div class="w3-container w3-black">
+						<h1>Desserts</h1>
+					</div>
+					<div class="w3-container">
+						<h5 style="color: black">Fruit Salad <b>$2.50</b></h5>
+						<h5 style="color: black">Ice cream <b>$2.00</b></h5>
+						<h5 style="color: black">Chocolate Cake <b>$4.00</b></h5>
+						<h5 style="color: black">Cheese <b>$5.50</b></h5>
+					</div>
+				</div>
 			</div>
 
 		</div>
@@ -64,41 +98,42 @@ require('../templates/hotelsheader.php');
 
 	<!-- search bar logic -->
 	<script>
-		function Search() {
+		function Search() 
+		{
 			var input, filter, table, tr, td, i, txtValue;
-  // fetch variables
-  input = document.getElementById("myInput");
+  			// fetch variables
+  			input = document.getElementById("myInput");
 
-  filter = input.value.toUpperCase();
+  			filter = input.value.toUpperCase();
 
-  table = document.getElementById("myTable");
+  			table = document.getElementById("myTable");
 
-  tr = table.getElementsByTagName("tr");
+  			tr = table.getElementsByTagName("tr");
 
-  for (i = 0; i < tr.length; i++) {
-  	// use the second column of td
-  	td = tr[i].getElementsByTagName("td")[0];
+  			for (i = 0; i < tr.length; i++) {
+  			// use the second column of td
+  			td = tr[i].getElementsByTagName("td")[0];
 
-  	if (td) {
-  		txtValue = td.textContent || td.innerText;
+  			if (td) {
+  				txtValue = td.textContent || td.innerText;
 
-  		if (txtValue.toUpperCase().indexOf(filter) > -1) {
-  			tr[i].style.display = "";
-  		} else {
-  			tr[i].style.display = "none";
+  				if (txtValue.toUpperCase().indexOf(filter) > -1) {
+  					tr[i].style.display = "";
+  				} else {
+  					tr[i].style.display = "none";
+  				}
+  			}       
   		}
-  	}       
-  }
 
-}
-</script>
+  	}
+  </script>
 
-<script src="../js/branch_reservations.js"></script>
+  <script src="../js/branch_reservations.js"></script>
 
 
-<!-- track activities -->
-<script src="../js/syslogs.js"></script>
+  <!-- track activities -->
+  <script src="../js/syslogs.js"></script>
 
-<?php
-require('../templates/footer.php');
-?>
+  <?php
+  require('../templates/footer.php');
+  ?>

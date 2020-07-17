@@ -34,6 +34,9 @@ require('templates/homeheader.php');
       <!-- Image of location/map -->
       <img src="images/undraw_resume_folder_2_arse.svg" class="w3-image" style="width:100%;">
     </div>
+    <div id="container" class="box">
+
+    </div>
   </div> 
 
   <script>
@@ -48,11 +51,15 @@ require('templates/homeheader.php');
   </script>
 
 
+<script src="js/speed.js"></script>
+
 <script src="js/loader.js"></script>
 
 
+<script src="js/js-snackbar.js?v=1.1.0"></script>
+
 <!-- track activities -->
 <script src="js/syslogs.js"></script>
-  <?php
-  require('templates/footer.php');
-  ?>
+<?php
+require('templates/footer.php');
+?>

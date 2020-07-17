@@ -2,53 +2,58 @@
 require('../templates/hotelsheader.php');
 ?>
 
-  <!-- Header -->
-  <header class="w3-display-container w3-content" style="max-width:1500px;margin-top: 10px">
-    <div class="w3-row w3-text-white w3-large w3-margin-top">
-    <div class="w3-col l12 m12 s12">
-
-    <img class="w3-image" src="images/undraw_eating_together_tjhx.svg" alt="London" width="1500" height="500">
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px;">
+  
+  <!-- Good offers -->
+  <div class="w3-container w3-margin-top">
   </div>
-</div>
-    <div class="w3-row w3-text-white w3-large w3-margin-top">
-    <div class="w3-col l12 m12 s12">
+  <div class="w3-row-padding w3-text-black w3-large">
+
+    <div class="w3-row-padding" style="margin:0 -16px">
+      
+      <div class="w3-card-4">
+        <div class="w3-container w3-green">
+          <h2>Login Form</h2>
+        </div>
+
+        <form class="w3-container">
+          <br>
+          <p><label>Phone number</label></p>
+          <input class="w3-input w3-margin-top" type="number" id="phone">
+
+          <p>  <label>Password</label></p>   
+          <input class="w3-input" type="password" id="password">
 
 
-      <div class="w3-red">
-        <h5>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
-        </h5>
+          <center><input type="checkbox" onclick="myFunction()">  Show Password</center>
+
+        </form><br>
+
+        <center><p><button class="w3-button w3-blue-grey w3-margin-bottom" onclick="check_empty_login()">Submit</button></p></center>
       </div>
     </div>
   </div>
-  </header>
+  <div class="w3-row-padding">&nbsp;</div>
 
-  <!-- Footer -->
-  <div class="w3-row">
-    <footer class="w3-container w3-center w3-opacity w3-margin-bottom">
-      <h5>Find Us On</h5>
-      <div class="w3-xlarge w3-padding-16">
-        <i class="fa fa-facebook-official w3-hover-opacity"></i>
-        <i class="fa fa-instagram w3-hover-opacity"></i>
-        <i class="fa fa-snapchat w3-hover-opacity"></i>
-        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-        <i class="fa fa-twitter w3-hover-opacity"></i>
-        <i class="fa fa-linkedin w3-hover-opacity"></i>
-      </div>
-      <p>Powered by Hotel covid <a href="" target="_blank" class="w3-hover-text-green">Hotel covid</a></p>
-    </footer>
-  </div>
-
-  <script>
-
-    function openRightMenu() {
-      document.getElementById("rightMenu").style.display = "block";
+  <!-- End page content -->
+</div>
+<script>
+  function myFunction() {
+    var x = document.getElementById("password");
+    if (x.type === "password") {
+      x.type = "text";
+    } else {
+      x.type = "password";
     }
+  }
+</script>
 
-    function closeRightMenu() {
-      document.getElementById("rightMenu").style.display = "none";
-    }
-  </script>
 
-</body>
-</html>
+<script src="../js/stafflogin.js"></script>
+
+<script src="../js/toastnotify.js"></script>
+
+<?php
+require('../templates/footer.php');
+?>

@@ -46,12 +46,14 @@ const branches = (id) =>{
 
 			modals.innerHTML+=`
 			<!-- reservation modal -->
+
 			<div id="rsvp`+element.reservation_id+`" class="w3-modal w3-display-middle">
 			<div class="w3-modal-content w3-animate-right  w3-card-4">
 			<header class="w3-container w3-green"> 
 			<span onclick="document.getElementById('rsvp`+element.reservation_id+`').style.display='none'" 
 			class="w3-button w3-display-topright">&times;</span>
-			<h2>RESERVATIONS</h2>
+			<p class="w3-margin-top">RESERVATIONS&nbsp;&nbsp;<span><button class="w3-button w3-round w3-black" onclick="document.getElementById('menu').style.display='block'">Menu</button></span></p>
+			
 			</header>
 			<div class="w3-container w3-margin-top">
 			<div class="w3-row">
@@ -67,10 +69,11 @@ const branches = (id) =>{
 			<div id="memb">
 			</div>
 			<p class="w3-wide"><b><u>Table members</u></b></p>
-
+			<div id="time">
 			<ol class="w3-ol" style="width:100%">
 			<li>`+element.name+` `+element.phone+`</li>
 			</ol>
+			</div>
 
 
 			<p class="w3-wide"><b><u>Add members</u></b></p>

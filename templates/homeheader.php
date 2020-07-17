@@ -30,7 +30,7 @@
 
 	<!-- Navigation Bar -->
 	<div class="w3-bar w3-white w3-border-bottom w3-xlarge ">
-		<a href="#" class="w3-bar-item w3-button w3-text-red w3-hover-red" id="llogo"><b><i class="fa fa-map-marker w3-margin-right"></i>Hoteli zetu</b></a>
+		<a href="#" class="w3-bar-item w3-button w3-text-red w3-hover-red" id="llogo"><img src="images/logos.png"></a>
 		<div id="dissaper">
 			<a href="eateries.php" class="w3-bar-item w3-button w3-mobile w3-hover-red w3-right">Eateries</a>
 			<a href="nightsout.php" class="w3-bar-item w3-button w3-mobile w3-hover-red w3-right">Nights out</a>

@@ -30,29 +30,6 @@
 
 </body>
 <script>
-
-// 	var doc = new jsPDF();
-// 	var elementHTML = $('#content').html();
-// 	var specialElementHandlers = {
-// 		'#elementH': function (element, renderer) {
-// 			return true;
-// 		}
-// 	};
-// 	doc.fromHTML(elementHTML, 15, 15, {
-// 		'width': 170,
-// 		'elementHandlers': specialElementHandlers
-// 	});
-
-// // Save the PDF
-// doc.save('sample-document.pdf');
-
-$([
-  {"name":"Lenovo Thinkpad 41A4298","website":"google222"},
-  {"name":"Lenovo Thinkpad 41A2222","website":"google"}
-  ])
-    .filter(function (i,n){
-        return n.website==='google';
-    });
-    
+location.reload();
 </script>
 </html>
